@@ -1,0 +1,338 @@
+{
+  "timestamp": "2026-02-02T21:44:19.966Z",
+  "content": [
+    {
+      "slug": "/",
+      "title": "Homepage - Hero welcome section",
+      "content": "hi neeraj here 👋 Software & Web Developer. I build apps, websites, and perform alchemy with code. Exploring machine & deep learning.. For Q&A, start a chat with Neeraj AI. For any escalations, please call or email me directly  (mailto:neerajsky704@gmail.com) ",
+      "metadata": {
+        "contentType": "page",
+        "enrichment": [
+          "This is my portfolio homepage with introduction and welcome message",
+          "I'm a backend developer with full-stack experience",
+          "You can chat with Neeraj Support for questions and answers",
+          "For escalations, contact Neeraj Lead on Instagram (this is a joke reference to my cat)",
+          "This site showcases my projects, career, and education"
+        ]
+      }
+    },
+    {
+      "slug": "/privacy",
+      "title": "Portfolio site privacy policy",
+      "content": "_Last Updated: Dec 2025_ TL;DR This site doesn’t track you. If you use the chatbot, messages are stored in my database so I can see what people are asking and improve the site. Hey 👋 Thanks for stopping by. This is my personal portfolio and blog where I share my work, projects, and thoughts. I care about privacy, so here’s a simple, no-nonsense explanation of how things work. What I collect (and why) This site is mostly static. There are no accounts, no ads, and no tracking cookies watching what you do. There are only a couple of cases where information might be stored: Chatbot messages If you use the chatbot, the messages are stored in my own database. I use them purely to understand what people are asking about, spot gaps in the site, and improve the chatbot and content over time. I’m the only one looking at this data. It’s not shared or sold. Please don’t put anything sensitive or offensive into the chat. Contacting me If you email me or use the contact form, I’ll only use your email to reply and continue the conversation. How I use the info Any information that’s collected is used to: - Keep the site running properly - Improve the site and content - Respond to messages and feedback That’s it. I don’t sell, trade, or rent personal data. If you accidentally share something you’d rather not have stored, just let me know and I’ll remove it. Questions? If you have questions, concerns, or just want to say hi, email me at neerajsky704@gmail.com or use the contact form. Happy to chat.",
+      "metadata": {
+        "contentType": "page",
+        "enrichment": [
+          "This page contains the privacy policy for my portfolio website",
+          "I explain how user data is handled and protected on this site",
+          "The privacy policy covers data protection and user rights",
+          "This document outlines the terms and conditions for using my website",
+          "I describe my approach to data privacy and security"
+        ]
+      }
+    },
+    {
+      "slug": "/blog",
+      "title": "Blog Information",
+      "content": "Blog posts cover technical topics, project updates, and personal insights. The chatbot can direct visitors to specific blog post URLs.",
+      "metadata": {
+        "contentType": "page",
+        "enrichment": [
+          "This is my blog page with technical articles and project updates",
+          "I write blog posts about technical topics and personal insights",
+          "My blog content is integrated with the portfolio chatbot system",
+          "You can find my technical writing and tutorials here",
+          "The blog showcases my project updates and development experiences"
+        ]
+      }
+    },
+    {
+      "slug": "projects:plantsmantra",
+      "title": "Project: PlantsMantra",
+      "content": "Project name: PlantsMantra. A full-stack e-commerce platform for plant retail featuring secure payments, admin management, dynamic SEO, and a Supabase-powered backend.. Technologies: React, Vite, TypeScript, Tailwind CSS, Shadcn UI, Supabase, PostgreSQL, Stripe, Razorpay, Zustand, TanStack Query. Links: Website: https://plantsmantra.com | Source: https://github.com/Neeraj704/PlantsMantra",
+      "metadata": {
+        "contentType": "project",
+        "enrichment": [
+          "I built PlantsMantra using React, Vite, TypeScript, Tailwind CSS, Shadcn UI, Supabase, PostgreSQL, Stripe, Razorpay, Zustand, TanStack Query",
+          "This project uses technologies like React, Vite, TypeScript, Tailwind CSS, Shadcn UI, Supabase, PostgreSQL, Stripe, Razorpay, Zustand, TanStack Query",
+          "PlantsMantra is a personal project",
+          "I developed PlantsMantra as a complex project",
+          "The PlantsMantra project focuses on web development",
+          "My technical skills include React, Vite, TypeScript, Tailwind CSS, Shadcn UI, Supabase, PostgreSQL, Stripe, Razorpay, Zustand, TanStack Query from building PlantsMantra",
+          "I created PlantsMantra which demonstrates my React, Vite, TypeScript, Tailwind CSS, Shadcn UI, Supabase, PostgreSQL, Stripe, Razorpay, Zustand, TanStack Query expertise"
+        ]
+      }
+    },
+    {
+      "slug": "projects:instant-ai-image-editor",
+      "title": "Project: Instant AI Image Editor",
+      "content": "Project name: Instant AI Image Editor. A professional-grade AI-powered image editor for e-commerce sellers that enables instant background removal, image enhancement, and marketplace-ready exports.. Technologies: Next.js 15, TypeScript, Tailwind CSS, Shadcn UI, Google Gemini Media API, PostgreSQL, Prisma, Vercel. Links: Website: https://www.photostudiohub.com/ | Source: https://github.com/Neeraj704/ImageEditor",
+      "metadata": {
+        "contentType": "project",
+        "enrichment": [
+          "I built Instant AI Image Editor using Next.js 15, TypeScript, Tailwind CSS, Shadcn UI, Google Gemini Media API, PostgreSQL, Prisma, Vercel",
+          "This project uses technologies like Next.js 15, TypeScript, Tailwind CSS, Shadcn UI, Google Gemini Media API, PostgreSQL, Prisma, Vercel",
+          "Instant AI Image Editor is a personal project",
+          "I developed Instant AI Image Editor as a complex project",
+          "The Instant AI Image Editor project focuses on web development",
+          "My technical skills include Next.js 15, TypeScript, Tailwind CSS, Shadcn UI, Google Gemini Media API, PostgreSQL, Prisma, Vercel from building Instant AI Image Editor",
+          "I created Instant AI Image Editor which demonstrates my Next.js 15, TypeScript, Tailwind CSS, Shadcn UI, Google Gemini Media API, PostgreSQL, Prisma, Vercel expertise"
+        ]
+      }
+    },
+    {
+      "slug": "projects:gossip-app",
+      "title": "Project: Gossip App",
+      "content": "Project name: Gossip App. A Flutter-based social application that combines real-time chat, matchmaking, thoughts sharing, and personalized news based on user-selected topics and moods.. Technologies: Flutter, Dart, Firebase Auth, Firestore, Firebase Cloud Messaging, Provider, Material Design. Links: Source: https://github.com/Neeraj704/GossipApp",
+      "metadata": {
+        "contentType": "project",
+        "enrichment": [
+          "I built Gossip App using Flutter, Dart, Firebase Auth, Firestore, Firebase Cloud Messaging, Provider, Material Design",
+          "This project uses technologies like Flutter, Dart, Firebase Auth, Firestore, Firebase Cloud Messaging, Provider, Material Design",
+          "Gossip App is a personal project",
+          "I developed Gossip App as a complex project",
+          "The Gossip App project focuses on web development",
+          "My technical skills include Flutter, Dart, Firebase Auth, Firestore, Firebase Cloud Messaging, Provider, Material Design from building Gossip App",
+          "I created Gossip App which demonstrates my Flutter, Dart, Firebase Auth, Firestore, Firebase Cloud Messaging, Provider, Material Design expertise"
+        ]
+      }
+    },
+    {
+      "slug": "projects:car-rental-app",
+      "title": "Project: Car Rental App",
+      "content": "Project name: Car Rental App. A client-focused car rental application with browsing, filtering, favorites management, and integrated API-driven listings built as a production-ready mobile app.. Technologies: TypeScript, React Native, Expo, Tailwind CSS, REST APIs. Links: Source: https://github.com/Neeraj704/CarRentalApp",
+      "metadata": {
+        "contentType": "project",
+        "enrichment": [
+          "I built Car Rental App using TypeScript, React Native, Expo, Tailwind CSS, REST APIs",
+          "This project uses technologies like TypeScript, React Native, Expo, Tailwind CSS, REST APIs",
+          "Car Rental App is a personal project",
+          "I developed Car Rental App as a moderate project",
+          "The Car Rental App project focuses on web development",
+          "My technical skills include TypeScript, React Native, Expo, Tailwind CSS, REST APIs from building Car Rental App",
+          "I created Car Rental App which demonstrates my TypeScript, React Native, Expo, Tailwind CSS, REST APIs expertise"
+        ]
+      }
+    },
+    {
+      "slug": "projects:crypto-wallet-app",
+      "title": "Project: Crypto Wallet App",
+      "content": "Project name: Crypto Wallet App. A feature-rich Expo-based mobile crypto wallet supporting Web3 authentication, self-custody wallets, and fiat-to-crypto deposits with a production-grade architecture.. Technologies: Expo, React Native, TypeScript, NativeWind, Privy.io, Solana Web3.js, Zustand, Onmeta, Web3Checkout. Links: Source: https://github.com/Neeraj704/CryptoWalletApp",
+      "metadata": {
+        "contentType": "project",
+        "enrichment": [
+          "I built Crypto Wallet App using Expo, React Native, TypeScript, NativeWind, Privy.io, Solana Web3.js, Zustand, Onmeta, Web3Checkout",
+          "This project uses technologies like Expo, React Native, TypeScript, NativeWind, Privy.io, Solana Web3.js, Zustand, Onmeta, Web3Checkout",
+          "Crypto Wallet App is a personal project",
+          "I developed Crypto Wallet App as a complex project",
+          "The Crypto Wallet App project focuses on web development",
+          "My technical skills include Expo, React Native, TypeScript, NativeWind, Privy.io, Solana Web3.js, Zustand, Onmeta, Web3Checkout from building Crypto Wallet App",
+          "I created Crypto Wallet App which demonstrates my Expo, React Native, TypeScript, NativeWind, Privy.io, Solana Web3.js, Zustand, Onmeta, Web3Checkout expertise"
+        ]
+      }
+    },
+    {
+      "slug": "projects:todo-app",
+      "title": "Project: Todo App",
+      "content": "Project name: Todo App. A full-stack MERN Todo application with authentication, task management, dark mode, and a responsive user interface.. Technologies: MongoDB, Express.js, React, Node.js, JavaScript, JWT, Tailwind CSS, Vite, Vercel. Links: Website: https://todo-app-tau-seven-25.vercel.app/signin | Source: https://github.com/Neeraj704/Todo-App",
+      "metadata": {
+        "contentType": "project",
+        "enrichment": [
+          "I built Todo App using MongoDB, Express.js, React, Node.js, JavaScript, JWT, Tailwind CSS, Vite, Vercel",
+          "This project uses technologies like MongoDB, Express.js, React, Node.js, JavaScript, JWT, Tailwind CSS, Vite, Vercel",
+          "Todo App is a personal project",
+          "I developed Todo App as a complex project",
+          "The Todo App project focuses on web development",
+          "My technical skills include MongoDB, Express.js, React, Node.js, JavaScript, JWT, Tailwind CSS, Vite, Vercel from building Todo App",
+          "I created Todo App which demonstrates my MongoDB, Express.js, React, Node.js, JavaScript, JWT, Tailwind CSS, Vite, Vercel expertise"
+        ]
+      }
+    },
+    {
+      "slug": "projects:medlink",
+      "title": "Project: MedLink",
+      "content": "Project name: MedLink. A MERN-based digital health platform that bridges traditional AYUSH medicine and modern ICD-11 standards using secure, FHIR-compliant clinical records.. Technologies: React, Vite, Node.js, Express.js, PostgreSQL, Prisma, FHIR R4, ABDM APIs, Google Vision AI, Twilio, AWS S3. Links: Source: https://github.com/Neeraj704/MedLink",
+      "metadata": {
+        "contentType": "project",
+        "enrichment": [
+          "I built MedLink using React, Vite, Node.js, Express.js, PostgreSQL, Prisma, FHIR R4, ABDM APIs, Google Vision AI, Twilio, AWS S3",
+          "This project uses technologies like React, Vite, Node.js, Express.js, PostgreSQL, Prisma, FHIR R4, ABDM APIs, Google Vision AI, Twilio, AWS S3",
+          "MedLink is a personal project",
+          "I developed MedLink as a complex project",
+          "The MedLink project focuses on web development",
+          "My technical skills include React, Vite, Node.js, Express.js, PostgreSQL, Prisma, FHIR R4, ABDM APIs, Google Vision AI, Twilio, AWS S3 from building MedLink",
+          "I created MedLink which demonstrates my React, Vite, Node.js, Express.js, PostgreSQL, Prisma, FHIR R4, ABDM APIs, Google Vision AI, Twilio, AWS S3 expertise"
+        ]
+      }
+    },
+    {
+      "slug": "projects:forest-fire-prediction-site",
+      "title": "Project: Forest Fire Prediction Site",
+      "content": "Project name: Forest Fire Prediction Site. A hackathon-built machine learning project that predicts forest fire risk using a Python-based model with a simple web UI rendered via PyWebview.. Technologies: Python, Machine Learning, Jupyter Notebook, HTML, CSS, JavaScript, PyWebview. Links: Source: https://github.com/Neeraj704/Forest-Fire-Prediction",
+      "metadata": {
+        "contentType": "project",
+        "enrichment": [
+          "I built Forest Fire Prediction Site using Python, Machine Learning, Jupyter Notebook, HTML, CSS, JavaScript, PyWebview",
+          "This project uses technologies like Python, Machine Learning, Jupyter Notebook, HTML, CSS, JavaScript, PyWebview",
+          "Forest Fire Prediction Site is a personal project",
+          "I developed Forest Fire Prediction Site as a complex project",
+          "The Forest Fire Prediction Site project focuses on web development",
+          "My technical skills include Python, Machine Learning, Jupyter Notebook, HTML, CSS, JavaScript, PyWebview from building Forest Fire Prediction Site",
+          "I created Forest Fire Prediction Site which demonstrates my Python, Machine Learning, Jupyter Notebook, HTML, CSS, JavaScript, PyWebview expertise"
+        ]
+      }
+    },
+    {
+      "slug": "projects:forecash",
+      "title": "Project: Forecash",
+      "content": "Project name: Forecash. A hackathon-built Gen-Z–focused fintech dashboard that combines expense tracking, ML-based financial forecasting, smart goal allocation, and an AI chatbot advisor.. Technologies: React, Vite, Tailwind CSS, Node.js, Express.js, FastAPI, PostgreSQL, JWT, TensorFlow, Keras, LangChain, AWS, Render, Vercel. Links: Website: https://forecash.vercel.app",
+      "metadata": {
+        "contentType": "project",
+        "enrichment": [
+          "I built Forecash using React, Vite, Tailwind CSS, Node.js, Express.js, FastAPI, PostgreSQL, JWT, TensorFlow, Keras, LangChain, AWS, Render, Vercel",
+          "This project uses technologies like React, Vite, Tailwind CSS, Node.js, Express.js, FastAPI, PostgreSQL, JWT, TensorFlow, Keras, LangChain, AWS, Render, Vercel",
+          "Forecash is a personal project",
+          "I developed Forecash as a complex project",
+          "The Forecash project focuses on web development",
+          "My technical skills include React, Vite, Tailwind CSS, Node.js, Express.js, FastAPI, PostgreSQL, JWT, TensorFlow, Keras, LangChain, AWS, Render, Vercel from building Forecash",
+          "I created Forecash which demonstrates my React, Vite, Tailwind CSS, Node.js, Express.js, FastAPI, PostgreSQL, JWT, TensorFlow, Keras, LangChain, AWS, Render, Vercel expertise"
+        ]
+      }
+    },
+    {
+      "slug": "career:otoddy-flutter-developer-paid-intern",
+      "title": "Career: OTOddy - Flutter Developer (Paid Intern)",
+      "content": "Company: OTOddy - Flutter Developer (Paid Intern). Period: Feb 2026 to Present. Worked on developing and maintaining Flutter application features, including UI improvements and bug fixes. Collaborated with the team to improve app performance, stability, and overall user experience.",
+      "metadata": {
+        "contentType": "career",
+        "enrichment": [
+          "I worked at OTOddy as a Flutter Developer (Paid Intern)",
+          "My role at OTOddy was Flutter Developer (Paid Intern)",
+          "I was employed at OTOddy from Feb 2026 to Present",
+          "During my time at OTOddy, I worked as a Flutter Developer (Paid Intern)",
+          "My employment history includes working at OTOddy",
+          "I gained experience at OTOddy in the technology industry",
+          "This was a internship position"
+        ]
+      }
+    },
+    {
+      "slug": "career:plants-mantra-full-stack-web-developer-contract",
+      "title": "Career: Plants Mantra - Full Stack Web Developer (Contract)",
+      "content": "Company: Plants Mantra - Full Stack Web Developer (Contract). Period: Aug 2025 to Oct 2025. Built their entire website from scratch including payment integration, handling deployment, and all backend infrastructure. Delivered complete admin portal and handled everything coding related from frontend to backend (React, Node.js, Express, Supabase).",
+      "metadata": {
+        "contentType": "career",
+        "enrichment": [
+          "I worked at Plants Mantra as a Full Stack Web Developer (Contract)",
+          "My role at Plants Mantra was Full Stack Web Developer (Contract)",
+          "I was employed at Plants Mantra from Aug 2025 to Oct 2025",
+          "During my time at Plants Mantra, I worked as a Full Stack Web Developer (Contract)",
+          "My employment history includes working at Plants Mantra",
+          "I gained experience at Plants Mantra in the technology industry",
+          "This was a professional position"
+        ]
+      }
+    },
+    {
+      "slug": "career:nvstly-full-stack-web-developer-contract",
+      "title": "Career: NVSTly - Full Stack Web Developer (Contract)",
+      "content": "Company: NVSTly - Full Stack Web Developer (Contract). Period: May 2025 to Aug 2025. Implemented bug fixes, new features, and UI updates. Worked with Figma, Next.js, Node.js, and Express.",
+      "metadata": {
+        "contentType": "career",
+        "enrichment": [
+          "I worked at NVSTly as a Full Stack Web Developer (Contract)",
+          "My role at NVSTly was Full Stack Web Developer (Contract)",
+          "I was employed at NVSTly from May 2025 to Aug 2025",
+          "During my time at NVSTly, I worked as a Full Stack Web Developer (Contract)",
+          "My employment history includes working at NVSTly",
+          "I gained experience at NVSTly in the technology industry",
+          "This was a professional position"
+        ]
+      }
+    },
+    {
+      "slug": "career:we-fund-you-trade-web-developer-paid-intern",
+      "title": "Career: We Fund You Trade - Web Developer (Paid Intern)",
+      "content": "Company: We Fund You Trade - Web Developer (Paid Intern). Period: Jan 2025 to Mar 2025. Handled UI fixes and basic API integrations. Contributed to codebase maintenance and improvements.",
+      "metadata": {
+        "contentType": "career",
+        "enrichment": [
+          "I worked at We Fund You Trade as a Web Developer (Paid Intern)",
+          "My role at We Fund You Trade was Web Developer (Paid Intern)",
+          "I was employed at We Fund You Trade from Jan 2025 to Mar 2025",
+          "During my time at We Fund You Trade, I worked as a Web Developer (Paid Intern)",
+          "My employment history includes working at We Fund You Trade",
+          "I gained experience at We Fund You Trade in the technology industry",
+          "This was a internship position"
+        ]
+      }
+    },
+    {
+      "slug": "education:manipal-university-jaipur-bachelor-of-technology-computer-science-ai-ml",
+      "title": "Education: Manipal University Jaipur - Bachelor of Technology Computer Science (AI/ML)",
+      "content": "School: Manipal University Jaipur. Degree: Bachelor of Technology Computer Science (AI/ML). Period: 2024 to 2028 (Tentative). CGPA (First year): 8.5/10.0",
+      "metadata": {
+        "contentType": "education",
+        "enrichment": [
+          "I studied at Manipal University Jaipur and earned a Bachelor of Technology Computer Science (AI/ML)",
+          "My education includes Bachelor of Technology Computer Science (AI/ML) from Manipal University Jaipur",
+          "I attended Manipal University Jaipur from 2024 to 2028 (Tentative)",
+          "I completed my diploma at Manipal University Jaipur",
+          "My field of study was computer science",
+          "I graduated from Manipal University Jaipur with a degree in Bachelor of Technology Computer Science (AI/ML)",
+          "My academic background includes Bachelor of Technology Computer Science (AI/ML) from Manipal University Jaipur"
+        ]
+      }
+    },
+    {
+      "slug": "education:seth-anandram-jaipuria-school-high-school-cbse-science-stream",
+      "title": "Education: Seth Anandram Jaipuria School - High School (CBSE), Science Stream",
+      "content": "School: Seth Anandram Jaipuria School. Degree: High School (CBSE), Science Stream. Period: 2010 to May 2024. Graduated with 84% in 12th grade.",
+      "metadata": {
+        "contentType": "education",
+        "enrichment": [
+          "I studied at Seth Anandram Jaipuria School and earned a High School (CBSE), Science Stream",
+          "My education includes High School (CBSE), Science Stream from Seth Anandram Jaipuria School",
+          "I attended Seth Anandram Jaipuria School from 2010 to May 2024",
+          "I completed my bachelor's degree at Seth Anandram Jaipuria School",
+          "My field of study was game development",
+          "I graduated from Seth Anandram Jaipuria School with a degree in High School (CBSE), Science Stream",
+          "My academic background includes High School (CBSE), Science Stream from Seth Anandram Jaipuria School"
+        ]
+      }
+    },
+    {
+      "slug": "socials:links",
+      "title": "Social Media Links",
+      "content": "LinkedIn: https://linkedin.com/in/neeraj704 - Connect professionally and view my resume | GitHub: https://github.com/Neeraj704 - Explore my code repositories and projects | Email: mailto:neerajsky704@gmail.com - Preferred communication, send me a direct email | Twitter: https://x.com/Neeraj704 | Instagram: https://www.instagram.com/neeraj704_",
+      "metadata": {
+        "contentType": "social",
+        "enrichment": [
+          "You can connect with me professionally on LinkedIn",
+          "My GitHub contains all my code repositories and projects",
+          "You can email me directly for communication",
+          "These are my social media profiles and contact links",
+          "I'm available on LinkedIn for professional networking",
+          "My GitHub showcases my programming projects and skills",
+          "Email is my preferred method for direct communication"
+        ]
+      }
+    },
+    {
+      "slug": "navigation:routes",
+      "title": "Site Navigation",
+      "content": "Available Routes: '/' - home: Portfolio overview, recent projects, and blog highlights | '/projects' - projects: Portfolio projects showcase | '/skills' - skills: My technical skills and stack | '/contact' - contact: Contact form | '/privacy' - privacy: Privacy policy | '/resume.pdf' - resume: Neeraj's resume CV in pdf format | External Links: 'mailto:neerajsky704@gmail.com' - email: Email Neeraj directly",
+      "metadata": {
+        "contentType": "navigation",
+        "enrichment": [
+          "This website has navigation to different sections like projects, blog, and contact",
+          "You can navigate to my projects page to see my work",
+          "The blog section contains my technical articles and updates",
+          "There's a contact page for getting in touch with me",
+          "The site structure includes homepage, projects, blog, and contact sections",
+          "You can find my resume and privacy policy through the navigation"
+        ]
+      }
+    }
+  ]
+}

@@ -1,10 +1,9 @@
 "use client";
 
-import { Button } from "@/components/ui/Button";
+
 import { cn } from "@/lib/utils";
 import { animate, motion, useMotionValue, useTransform } from "framer-motion";
-import { RefreshCw } from "lucide-react";
-import { Dispatch, SetStateAction, useState } from "react";
+import { Dispatch, SetStateAction, useEffect, useState } from "react";
 import ImageWithSkeleton from "./ImageWithSkeleton";
 
 interface SwipeCardsProps {
@@ -14,9 +13,20 @@ interface SwipeCardsProps {
 const SwipeCards = ({ className }: SwipeCardsProps) => {
   const [cards, setCards] = useState<Card[]>(cardData);
 
-  const resetCards = () => {
-    setCards(cardData);
-  };
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCards((pv) => {
+        const newArray = [...pv];
+        const frontCard = newArray.pop();
+        if (frontCard) {
+          newArray.unshift(frontCard);
+        }
+        return newArray;
+      });
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div
@@ -25,14 +35,6 @@ const SwipeCards = ({ className }: SwipeCardsProps) => {
         className,
       )}
     >
-      {cards.length === 0 && (
-        <div style={{ gridRow: 1, gridColumn: 1 }} className="z-20">
-          <Button onClick={resetCards} variant={"outline"}>
-            <RefreshCw className="size-4" />
-            Again
-          </Button>
-        </div>
-      )}
       {cards.map((card, index) => {
         const depth = cards.length - 1 - index;
         return (
@@ -74,10 +76,26 @@ const Card = ({
     return `${rotateRaw.get() + offset}deg`;
   });
 
+  useEffect(() => {
+    if (!isFront) {
+      const currentX = x.get();
+      if (currentX !== 0) {
+        animate(x, 0, { duration: 0.2 });
+      }
+    }
+  }, [isFront, x]);
+
   const handleDragEnd = (event: any, info: { offset: { x: number } }) => {
     if (Math.abs(info.offset.x) > 100) {
-      // If swiped far enough, remove the card
-      setCards((pv) => pv.filter((v) => v.id !== id));
+      // If swiped far enough, move the card to the back
+      setCards((pv) => {
+        const newArray = [...pv];
+        const frontCard = newArray.pop();
+        if (frontCard) {
+          newArray.unshift(frontCard);
+        }
+        return newArray;
+      });
     } else {
       // Otherwise, animate the card back to the center
       animate(x, 0, {
@@ -157,18 +175,14 @@ type Card = {
 const cardData: Card[] = [
   {
     id: 1,
-    url: "/img/homeMeImage.png",
+    url: "/img/myImage1.png",
   },
   {
     id: 2,
-    url: "/img/homeMeImage.png",
+    url: "/img/myImage2.png",
   },
   {
     id: 3,
-    url: "/img/homeMeImage.png",
-  },
-  {
-    id: 4,
-    url: "/img/homeMeImage.png",
-  },
+    url: "/img/myImage3.png",
+  }
 ];

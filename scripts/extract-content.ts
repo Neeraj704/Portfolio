@@ -95,13 +95,13 @@ function extractBlogPageContent(): ContentChunk[] {
       slug: "/blog",
       title: "Blog Information",
       content:
-        "Blog posts are handled separately by the backend RAG system. Posts cover technical topics, project updates, and personal insights. Chatbot can direct visitors to specific blog post URLs. All blog content is available for embedding via TACOS backend system.",
+        "Blog posts cover technical topics, project updates, and personal insights. The chatbot can direct visitors to specific blog post URLs.",
       metadata: {
         contentType: "page",
         enrichment: [
           "This is my blog page with technical articles and project updates",
           "I write blog posts about technical topics and personal insights",
-          "My blog content is integrated with the TACOS backend system",
+          "My blog content is integrated with the portfolio chatbot system",
           "You can find my technical writing and tutorials here",
           "The blog showcases my project updates and development experiences",
         ],
@@ -164,14 +164,14 @@ function extractCareerData(): ContentChunk[] {
       Array.isArray(job.positions) && job.positions.length > 0
         ? job.positions
         : [
-            {
-              title: job.title,
-              start: job.start,
-              end: job.end,
-              description: job.description,
-              links: job.links,
-            },
-          ];
+          {
+            title: job.title,
+            start: job.start,
+            end: job.end,
+            description: job.description,
+            links: job.links,
+          },
+        ];
 
     positions.forEach((position: any) => {
       const roleTitle = position.title ?? job.title ?? "Role";
@@ -243,14 +243,14 @@ function extractEducationData(): ContentChunk[] {
       Array.isArray(edu.positions) && edu.positions.length > 0
         ? edu.positions
         : [
-            {
-              title: edu.title,
-              start: edu.start,
-              end: edu.end,
-              description: edu.description,
-              links: edu.links,
-            },
-          ];
+          {
+            title: edu.title,
+            start: edu.start,
+            end: edu.end,
+            description: edu.description,
+            links: edu.links,
+          },
+        ];
 
     positions.forEach((position: any) => {
       const degreeTitle = position.title ?? edu.title ?? "Degree";
@@ -428,7 +428,7 @@ function main() {
     const extractedContent = extractAllContent();
 
     // Create output directory if it doesn't exist
-    const outputDir = path.join(process.cwd(), "output");
+    const outputDir = path.join(process.cwd(), "src/data");
     if (!fs.existsSync(outputDir)) {
       fs.mkdirSync(outputDir, { recursive: true });
     }

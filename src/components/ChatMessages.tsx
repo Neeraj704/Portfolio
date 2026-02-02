@@ -59,12 +59,12 @@ export default function ChatMessages({
           <p className="text-center text-xs text-muted-foreground">
             Powered by{" "}
             <a
-              href="https://github.com/tedawf/tacos"
+              href="https://github.com/neeraj704/portfolio"
               className="underline underline-offset-2 hover:text-primary"
               target="_blank"
               rel="noopener noreferrer"
             >
-              TACOS
+              Neeraj AI
             </a>
           </p>
         </div>

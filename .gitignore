@@ -36,4 +36,4 @@ yarn-error.log*
 next-env.d.ts
 
 # output files
-output/
+output/src/data/extracted-content.json

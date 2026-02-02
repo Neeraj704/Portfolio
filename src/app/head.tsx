@@ -1,10 +1,10 @@
 export default function Head() {
   return (
     <>
-      <link rel="dns-prefetch" href="https://tacos.tedawf.com" />
+      <link rel="dns-prefetch" href="https://neeraj704.vercel.app" />
       <link
         rel="preconnect"
-        href="https://tacos.tedawf.com"
+        href="https://neeraj704.vercel.app"
         crossOrigin="anonymous"
       />
     </>

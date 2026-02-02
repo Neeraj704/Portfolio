@@ -1,11 +1,7 @@
 "use server";
 
-import ContactFormEmail from "@/components/email/ContactFormEmail";
-import { Resend } from "resend";
 import { z } from "zod";
 import { ContactFormSchema } from "./schemas";
-
-const resend = new Resend(process.env.RESEND_API_KEY);
 
 type ContactFormInputs = z.infer<typeof ContactFormSchema>;
 
@@ -18,23 +14,35 @@ export async function sendEmail(data: ContactFormInputs) {
 
   try {
     const { name, email, message } = result.data;
-    const { data, error } = await resend.emails.send({
-      from: `Neeraj Portfolio <onboarding@resend.dev>`,
-      to: "neerajsky704@gmail.com",
-      replyTo: [email],
-      cc: [email],
-      subject: `New message from ${name}!`,
-      text: `Name:\n${name}\n\nEmail:\n${email}\n\nMessage:\n${message}`,
-      // react: ContactFormEmail({ name, email, message }),
-    });
 
-    if (!data || error) {
-      console.error(error?.message);
-      throw new Error("Failed to send email!");
+    // Insert into Supabase
+    const { createClient } = await import("@supabase/supabase-js");
+    const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+    const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+
+    if (!supabaseUrl || !supabaseKey) {
+      throw new Error("Missing Supabase environment variables");
+    }
+
+    const supabase = createClient(supabaseUrl, supabaseKey);
+    const { error: dbError } = await supabase
+      .from("contact_messages")
+      .insert([
+        {
+          name,
+          email,
+          message,
+        },
+      ]);
+
+    if (dbError) {
+      console.error("Supabase insert error:", dbError);
+      throw new Error("Failed to save message");
     }
 
     return { success: true };
   } catch (error) {
-    return { error };
+    console.error("Contact form error:", error);
+    return { error: "Something went wrong. Please try again." };
   }
 }

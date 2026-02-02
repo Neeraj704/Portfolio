@@ -5,7 +5,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "tacos.tedawf.com",
+        hostname: "neeraj704.vercel.app",
         port: "",
         pathname: "/images/**",
       },

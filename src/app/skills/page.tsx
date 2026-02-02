@@ -20,7 +20,7 @@ export default function Skills() {
         <div className="flex flex-col gap-2">
           <h1 className="text-2xl font-bold sm:text-3xl">Work in Progress</h1>
           <p className="text-muted-foreground text-balance">
-            I'm currently crafting this section to showcase my technical arsenal.
+            I&apos;m currently crafting this section to showcase my technical arsenal.
             Check back soon for a detailed breakdown!
           </p>
         </div>
