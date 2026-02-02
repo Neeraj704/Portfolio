@@ -1,0 +1,29 @@
+{
+  "socials": [
+    {
+      "name": "LinkedIn",
+      "href": "https://linkedin.com/in/neeraj704",
+      "icon": "linkedin"
+    },
+    {
+      "name": "GitHub",
+      "href": "https://github.com/Neeraj704",
+      "icon": "github"
+    },
+    {
+      "name": "Email",
+      "href": "mailto:neerajsky704@gmail.com",
+      "icon": "mail"
+    },
+    {
+      "name": "Twitter",
+      "href": "https://x.com/Neeraj704",
+      "icon": "twitter"
+    },
+    {
+      "name": "Instagram",
+      "href": "https://www.instagram.com/neeraj704_",
+      "icon": "instagram"
+    }
+  ]
+}

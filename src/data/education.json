@@ -1,0 +1,34 @@
+{
+  "education": [
+    {
+      "name": "Manipal University Jaipur",
+      "href": "https://jaipur.manipal.edu/",
+      "logo": "https://img.favpng.com/19/0/14/manipal-academy-of-higher-education-sikkim-manipal-university-sikkim-manipal-institute-of-technology-manipal-university-jaipur-png-favpng-RWHeWLjU7JHM4L47caXqb1GKi.jpg",
+      "positions": [
+        {
+          "title": "Bachelor of Technology Computer Science (AI/ML)",
+          "start": "2024",
+          "end": "2028 (Tentative)",
+          "description": [
+            "CGPA (First year): 8.5/10.0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Seth Anandram Jaipuria School",
+      "href": "https://jaipuria.edu.in/",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU03ngYr42Eqhhcg136jSbh5WEOjKzKNoaew&s",
+      "positions": [
+        {
+          "title": "High School (CBSE), Science Stream",
+          "start": "2010",
+          "end": "May 2024",
+          "description": [
+            "Graduated with 84% in 12th grade."
+          ]
+        }
+      ]
+    }
+  ]
+}

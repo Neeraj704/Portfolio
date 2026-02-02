@@ -1,0 +1,48 @@
+{
+  "routes": [
+    {
+      "path": "/",
+      "name": "home",
+      "description": "Portfolio overview, recent projects, and blog highlights",
+      "showInNav": true
+    },
+    {
+      "path": "/projects",
+      "name": "projects",
+      "description": "Portfolio projects showcase",
+      "showInNav": true
+    },
+    {
+      "path": "/skills",
+      "name": "skills",
+      "description": "My technical skills and stack",
+      "showInNav": true
+    },
+    {
+      "path": "/contact",
+      "name": "contact",
+      "description": "Contact form",
+      "showInNav": true
+    },
+    {
+      "path": "/privacy",
+      "name": "privacy",
+      "description": "Privacy policy",
+      "showInNav": false
+    },
+    {
+      "path": "/resume.pdf",
+      "name": "resume",
+      "description": "Neeraj's resume CV in pdf format",
+      "showInNav": false
+    }
+  ],
+  "externalLinks": [
+    {
+      "path": "mailto:neerajsky704@gmail.com",
+      "name": "email",
+      "description": "Email Neeraj directly",
+      "isExternal": true
+    }
+  ]
+}

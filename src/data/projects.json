@@ -1,0 +1,239 @@
+{
+  "projects": [
+    {
+      "name": "PlantsMantra",
+      "description": "A full-stack e-commerce platform for plant retail featuring secure payments, admin management, dynamic SEO, and a Supabase-powered backend.",
+      "href": "https://plantsmantra.com",
+      "image": "/img/project-plantsmantra.png",
+      "type": "website",
+      "tags": [
+        "React",
+        "Vite",
+        "TypeScript",
+        "Tailwind CSS",
+        "Shadcn UI",
+        "Supabase",
+        "PostgreSQL",
+        "Stripe",
+        "Razorpay",
+        "Zustand",
+        "TanStack Query"
+      ],
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://plantsmantra.com",
+          "icon": "globe"
+        },
+        {
+          "name": "Source",
+          "href": "https://github.com/Neeraj704/PlantsMantra",
+          "icon": "github"
+        }
+      ]
+    },
+    {
+      "name": "Instant AI Image Editor",
+      "description": "A professional-grade AI-powered image editor for e-commerce sellers that enables instant background removal, image enhancement, and marketplace-ready exports.",
+      "image": "/img/project-editor.png",
+      "type": "website",
+      "tags": [
+        "Next.js 15",
+        "TypeScript",
+        "Tailwind CSS",
+        "Shadcn UI",
+        "Google Gemini Media API",
+        "PostgreSQL",
+        "Prisma",
+        "Vercel"
+      ],
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://www.photostudiohub.com/",
+          "icon": "globe"
+        },
+        {
+          "name": "Source",
+          "href": "https://github.com/Neeraj704/ImageEditor",
+          "icon": "github"
+        }
+      ]
+    },
+    {
+      "name": "Gossip App",
+      "description": "A Flutter-based social application that combines real-time chat, matchmaking, thoughts sharing, and personalized news based on user-selected topics and moods.",
+      "image": "/img/project-gossip.png",
+      "type": "app",
+      "tags": [
+        "Flutter",
+        "Dart",
+        "Firebase Auth",
+        "Firestore",
+        "Firebase Cloud Messaging",
+        "Provider",
+        "Material Design"
+      ],
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/Neeraj704/GossipApp",
+          "icon": "github"
+        }
+      ]
+    },
+    {
+      "name": "Car Rental App",
+      "description": "A client-focused car rental application with browsing, filtering, favorites management, and integrated API-driven listings built as a production-ready mobile app.",
+      "image": "/img/project-carrental.png",
+      "type": "app",
+      "tags": [
+        "TypeScript",
+        "React Native",
+        "Expo",
+        "Tailwind CSS",
+        "REST APIs"
+      ],
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/Neeraj704/CarRentalApp",
+          "icon": "github"
+        }
+      ]
+    },
+    {
+      "name": "Crypto Wallet App",
+      "description": "A feature-rich Expo-based mobile crypto wallet supporting Web3 authentication, self-custody wallets, and fiat-to-crypto deposits with a production-grade architecture.",
+      "image": "/img/project-crypto.png",
+      "type": "app",
+      "tags": [
+        "Expo",
+        "React Native",
+        "TypeScript",
+        "NativeWind",
+        "Privy.io",
+        "Solana Web3.js",
+        "Zustand",
+        "Onmeta",
+        "Web3Checkout"
+      ],
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/Neeraj704/CryptoWalletApp",
+          "icon": "github"
+        }
+      ]
+    },
+    {
+      "name": "Todo App",
+      "description": "A full-stack MERN Todo application with authentication, task management, dark mode, and a responsive user interface.",
+      "href": "https://todo-app-tau-seven-25.vercel.app/signin",
+      "image": "/img/project-todo.png",
+      "type": "website",
+      "tags": [
+        "MongoDB",
+        "Express.js",
+        "React",
+        "Node.js",
+        "JavaScript",
+        "JWT",
+        "Tailwind CSS",
+        "Vite",
+        "Vercel"
+      ],
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://todo-app-tau-seven-25.vercel.app/signin",
+          "icon": "globe"
+        },
+        {
+          "name": "Source",
+          "href": "https://github.com/Neeraj704/Todo-App",
+          "icon": "github"
+        }
+      ]
+    },
+    {
+      "name": "MedLink",
+      "description": "A MERN-based digital health platform that bridges traditional AYUSH medicine and modern ICD-11 standards using secure, FHIR-compliant clinical records.",
+      "href": "https://medlink-lovat.vercel.app",
+      "image": "/img/project-medlink.png",
+      "type": "website",
+      "tags": [
+        "React",
+        "Vite",
+        "Node.js",
+        "Express.js",
+        "PostgreSQL",
+        "Prisma",
+        "FHIR R4",
+        "ABDM APIs",
+        "Google Vision AI",
+        "Twilio",
+        "AWS S3"
+      ],
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/Neeraj704/MedLink",
+          "icon": "github"
+        }
+      ]
+    },
+    {
+      "name": "Forest Fire Prediction Site",
+      "description": "A hackathon-built machine learning project that predicts forest fire risk using a Python-based model with a simple web UI rendered via PyWebview.",
+      "image": "/img/project-fire.png",
+      "type": "website",
+      "tags": [
+        "Python",
+        "Machine Learning",
+        "Jupyter Notebook",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "PyWebview"
+      ],
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/Neeraj704/Forest-Fire-Prediction",
+          "icon": "github"
+        }
+      ]
+    },
+    {
+      "name": "Forecash",
+      "description": "A hackathon-built Gen-Z–focused fintech dashboard that combines expense tracking, ML-based financial forecasting, smart goal allocation, and an AI chatbot advisor.",
+      "href": "https://forecash.vercel.app",
+      "image": "/img/project-forecash.png",
+      "type": "website",
+      "tags": [
+        "React",
+        "Vite",
+        "Tailwind CSS",
+        "Node.js",
+        "Express.js",
+        "FastAPI",
+        "PostgreSQL",
+        "JWT",
+        "TensorFlow",
+        "Keras",
+        "LangChain",
+        "AWS",
+        "Render",
+        "Vercel"
+      ],
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://forecash.vercel.app",
+          "icon": "globe"
+        }
+      ]
+    }
+  ]
+}

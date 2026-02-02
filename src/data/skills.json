@@ -1,0 +1,48 @@
+{
+  "skills": [
+    {
+      "category": "Languages",
+      "items": [
+        "TypeScript",
+        "JavaScript",
+        "Python",
+        "Dart",
+        "SQL",
+        "HTML/CSS"
+      ]
+    },
+    {
+      "category": "Frontend",
+      "items": [
+        "React",
+        "Next.js",
+        "Tailwind CSS",
+        "Flutter",
+        "Framer Motion",
+        "Redux"
+      ]
+    },
+    {
+      "category": "Backend",
+      "items": [
+        "Node.js",
+        "Express",
+        "Supabase",
+        "PostgreSQL",
+        "Firebase",
+        "Prisma"
+      ]
+    },
+    {
+      "category": "Tools & DevOps",
+      "items": [
+        "Git",
+        "Docker",
+        "VS Code",
+        "Figma",
+        "Vercel",
+        "Linux"
+      ]
+    }
+  ]
+}

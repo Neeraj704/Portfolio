@@ -1,0 +1,16 @@
+{
+  "introduction": {
+    "greeting": "hi neeraj here 👋",
+    "description": "Software & Web Developer. I build apps, websites, and perform alchemy with code. Exploring machine & deep learning.",
+    "chatPrompt": "For Q&A, start a chat with Neeraj AI",
+    "escalation": {
+      "text": "For any escalations, please call or email me directly",
+      "linkText": "",
+      "suffix": ""
+    }
+  },
+  "escalationLink": {
+    "href": "mailto:neerajsky704@gmail.com",
+    "title": "Email Me"
+  }
+}

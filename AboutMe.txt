@@ -1,0 +1,128 @@
+1.
+Neeraj (no full name)
+24th June, 2006
+Jaipur, India
+Write this yourself nicely, welp im into software development and web development and ive worked on mobile apps as well... so make a nice line idk...
+Same for this, websites, apps, react, react native, flutter, dart, next, express node etc ive done all... idk my main bio description what should be, also if possible write a small line saying stuff about me wanting to explore in the field of machile and deep learning as well.
+
+2.
+Neeraj's Portfolio
+neeraj704.vercel.app
+Figure this out, just not the same exact as ted
+Idk this figure this out, or maybe just open a modal showing 2 options, either call or mail me, +91 9650521546 neerajsky704@gmail.com
+Yes keep the chat there, use this google gemini api key ``GEMINI_API_KEY="AIzaSyBKDH883r-SGQo1yTdBCrxcfet4ro-eSJM"``
+and this as fallback api key ``API Key
+AIzaSyCCnq1U6iZOkZqi_gB2RR6QVwiyPEtBVtk
+Name
+Gemini API Key
+``
+Name it chat with neeraj ai, that works
+
+3.
+neerajsky704@gmail.com
+https://www.linkedin.com/in/neeraj704/
+https://github.com/Neeraj704/
+https://x.com/Neeraj704
+https://www.instagram.com/neeraj704_/
+replaced
+
+4.
+Work experience idk what to say exactly but : write the description of all the work experience sections nicely by urself, its okay to lie and exaggerate in this section, no need to only stick to honest and honest stuff only. can lie to make it look good.
+
+Plants Mantra
+https://www.plantsmantra.com/
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLOWoi5qTGoEREBd5NKwYfdqojE06eCAJZwA&s
+full stack web developer (contract)
+august 2025 - october 2025
+i built their entire website, payemnt integration, handling, deploying, and all the backend stuff as well   everything coding related was me and just me start to end, delivery admin portal everything frontend backend everything. (React, Node.js, express, supabase)
+
+NVSTly
+https://nvstly.com/
+full stack web developer (contract)
+may 2025 - august 2025
+https://cdn-1.webcatalog.io/catalog/nvstly/nvstly-icon-filled-256.png?v=1765154934545
+bug fixes and new features  ui updates as well (write this section nicely by urself) (Figma, Nextjs, Node.js, express)
+
+We Fund You Trade 
+https://wfyt.com/
+https://wfyt.com/wp-content/uploads/2023/06/wfyt-mobile.png (transparent background so keep that in mind use wisely)
+Web dev paid internship
+ui fixes, basic api integration and all (write this section nicely by urself as well)
+jan 2025 - march 2025
+
+
+5.
+Seth Anandram Jaipuria School (2010 - 2024)
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU03ngYr42Eqhhcg136jSbh5WEOjKzKNoaew&s
+High School (CBSE), Science Stream
+ Graduated: May 2024 with 84% in 12th.
+Manipal University Jaipur (2024 - Tentatively 2028)
+https://img.favpng.com/19/0/14/manipal-academy-of-higher-education-sikkim-manipal-university-sikkim-manipal-institute-of-technology-manipal-university-jaipur-png-favpng-RWHeWLjU7JHM4L47caXqb1GKi.jpg
+Bachelor of Technology Computer Science (AI/ML)
+CGPA (First year): 8.5/10.0
+
+6.
+Project 1:
+Name: Instant AI Image Editor
+One-sentence Description: A professional-grade AI-powered image editor for e-commerce sellers that enables instant background removal, image enhancement, batch processing, and marketplace-ready exports.
+Tech Stack Tags: Next.js 15, TypeScript, Tailwind CSS, Shadcn UI, Google Gemini Media API, PostgreSQL, Prisma, Vercel
+Website/Demo Link: Not provided (Production deployment exists on Vercel)
+GitHub/Source Link: https://github.com/Neeraj704/ImageEditor
+Project 2:
+Name: Gossip — Flutter Social Matching App
+One-sentence Description: A Flutter-based social application that combines real-time chat, matchmaking, thoughts sharing, and personalized news based on user-selected topics and moods (vibes).
+Tech Stack Tags: Flutter, Dart, Firebase Auth, Firestore, Firebase Cloud Messaging, Provider, Material Design
+Website/Demo Link: Not provided
+GitHub/Source Link: https://github.com/Neeraj704/GossipApp
+
+Project 3:
+Name: Car Rental App
+One-sentence Description: A client-focused car rental application with browsing, filtering, favorites management, and integrated API-driven listings built as a production-ready mobile app.
+Tech Stack Tags: TypeScript, React Native, Expo, Tailwind CSS, REST APIs
+Website/Demo Link: Not provided
+GitHub/Source Link: https://github.com/Neeraj704/CarRentalApp
+
+Project 4:
+Name: PlantsMantra
+One-sentence Description: A full-stack e-commerce platform for plant retail featuring secure payments, admin management, dynamic SEO, and a Supabase-powered backend.
+Tech Stack Tags: React, Vite, TypeScript, Tailwind CSS, Shadcn UI, Supabase, PostgreSQL, Stripe, Razorpay, Zustand, TanStack Query
+Website/Demo Link: https://plantsmantra.com
+GitHub/Source Link: https://github.com/Neeraj704/PlantsMantra
+
+Project 5:
+Name: CryptoWallet
+One-sentence Description: A feature-rich Expo-based mobile crypto wallet supporting Web3 authentication, self-custody wallets, and fiat-to-crypto deposits with a production-grade architecture.
+Tech Stack Tags: Expo, React Native, TypeScript, NativeWind, Privy.io, Solana Web3.js, Zustand, Onmeta, Web3Checkout
+Website/Demo Link: Not provided
+GitHub/Source Link: https://github.com/Neeraj704/CryptoWalletApp
+
+Project 6:
+Name: TodoApp
+One-sentence Description: A full-stack MERN Todo application with authentication, task management, dark mode, and a responsive user interface.
+Tech Stack Tags: MongoDB, Express.js, React, Node.js, JavaScript, JWT, Tailwind CSS, Vite, Vercel
+Website/Demo Link: https://todo-app-tau-seven-25.vercel.app/signin
+GitHub/Source Link: https://github.com/Neeraj704/Todo-App
+
+Project 7:
+Name: MedLink
+One-sentence Description: A MERN-based digital health platform that bridges traditional AYUSH medicine and modern ICD-11 standards using secure, FHIR-compliant clinical records and national healthcare authentication.
+Tech Stack Tags: React, Vite, Node.js, Express.js, PostgreSQL, Prisma, FHIR R4, ABDM APIs, Google Vision AI, Twilio, AWS S3
+Website/Demo Link: https://medlink-lovat.vercel.app
+GitHub/Source Link: https://github.com/Neeraj704/MedLink
+
+Project 8:
+Name: Forest Fire Prediction Model
+One-sentence Description: A hackathon-built machine learning project that predicts forest fire risk using a Python-based model with a simple web UI rendered via PyWebview.
+Tech Stack Tags: Python, Machine Learning, Jupyter Notebook, HTML, CSS, JavaScript, PyWebview
+Website/Demo Link: Not provided (GitHub Pages deployment exists but link not specified)
+GitHub/Source Link: https://github.com/Neeraj704/Forest-Fire-Prediction
+
+Project 9:
+Name: Forecash
+One-sentence Description: A hackathon-built Gen-Z–focused fintech dashboard that combines expense tracking, ML-based financial forecasting, smart goal allocation, and an AI chatbot advisor.
+Tech Stack Tags: React, Vite, Tailwind CSS, Node.js, Express.js, FastAPI, PostgreSQL, JWT, TensorFlow, Keras, LangChain, AWS, Render, Vercel
+Website/Demo Link: https://forecash.vercel.app
+GitHub/Source Link: Not provided (Private archived repository)
+
+7.
+for image assets, everywhere for now you just create new images in the /public folder inside nicely divided sub folders... keep copying a dummy image lets say whatever one you have rn, and just rename all of them to match the name of the image you are using  so that its easier for me to edit those in future. 

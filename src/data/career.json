@@ -1,0 +1,68 @@
+{
+  "career": [
+    {
+      "name": "OTOddy",
+      "href": "https://otoddy.com/",
+      "logo": "https://otoddy.com/favicon-512x512.png",
+      "positions": [
+        {
+          "title": "Flutter Developer (Paid Intern)",
+          "start": "Feb 2026",
+          "end": "Present",
+          "description": [
+            "Worked on developing and maintaining Flutter application features, including UI improvements and bug fixes.",
+            "Collaborated with the team to improve app performance, stability, and overall user experience."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Plants Mantra",
+      "href": "https://www.plantsmantra.com/",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLOWoi5qTGoEREBd5NKwYfdqojE06eCAJZwA&s",
+      "positions": [
+        {
+          "title": "Full Stack Web Developer (Contract)",
+          "start": "Aug 2025",
+          "end": "Oct 2025",
+          "description": [
+            "Built their entire website from scratch including payment integration, handling deployment, and all backend infrastructure.",
+            "Delivered complete admin portal and handled everything coding related from frontend to backend (React, Node.js, Express, Supabase)."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "NVSTly",
+      "href": "https://nvstly.com/",
+      "logo": "https://cdn-1.webcatalog.io/catalog/nvstly/nvstly-icon-filled-256.png?v=1765154934545",
+      "positions": [
+        {
+          "title": "Full Stack Web Developer (Contract)",
+          "start": "May 2025",
+          "end": "Aug 2025",
+          "description": [
+            "Implemented bug fixes, new features, and UI updates.",
+            "Worked with Figma, Next.js, Node.js, and Express."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "We Fund You Trade",
+      "href": "https://wfyt.com/",
+      "logo": "https://wfyt.com/wp-content/uploads/2023/06/wfyt-mobile.png",
+      "positions": [
+        {
+          "title": "Web Developer (Paid Intern)",
+          "start": "Jan 2025",
+          "end": "Mar 2025",
+          "description": [
+            "Handled UI fixes and basic API integrations.",
+            "Contributed to codebase maintenance and improvements."
+          ]
+        }
+      ]
+    }
+  ]
+}
