@@ -25,7 +25,7 @@ interface Node {
   pillH?: number;
 }
 
-export default function SkillCloud() {
+export default function SkillCloud({ iconStyle = "colored" }: { iconStyle?: "colored" | "mono" }) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const { resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
@@ -45,8 +45,24 @@ export default function SkillCloud() {
     allSkills.forEach((skill) => {
       const img = new Image();
       img.crossOrigin = "anonymous";
-      img.src = `https://cdn.simpleicons.org/${skill.slug}?color=${isDark ? "ffffff" : "111111"}`;
-      logoImgs[skill.slug] = img;
+
+      const s = skill as { slug: string; logoDark?: string; logoLight?: string };
+
+      if (iconStyle === "mono") {
+        // Monochrome mode: force white in dark, near-black in light
+        img.src = `https://cdn.simpleicons.org/${s.slug}/${isDark ? "ffffff" : "111111"}`;
+      } else if (isDark && s.logoDark) {
+        // Colored mode: use manual dark override if this icon has one (e.g. Express, VS Code)
+        img.src = s.logoDark;
+      } else if (!isDark && s.logoLight) {
+        // Colored mode: use manual light override if this icon has one
+        img.src = s.logoLight;
+      } else {
+        // Colored mode default: brand color (no color in URL = SimpleIcons brand color)
+        img.src = `https://cdn.simpleicons.org/${s.slug}`;
+      }
+
+      logoImgs[s.slug] = img;
     });
 
     let W = 0;
@@ -276,7 +292,7 @@ export default function SkillCloud() {
       canvas.removeEventListener("mousemove", onMouseMove);
       canvas.removeEventListener("mouseleave", onMouseLeave);
     };
-  }, [mounted, resolvedTheme]);
+  }, [mounted, resolvedTheme, iconStyle]);
 
   if (!mounted) {
     return <div className="w-full h-[260px] sm:h-[380px] rounded-xl bg-muted/30 animate-pulse" />;

@@ -24,11 +24,11 @@
       "icon": "layout",
       "items": [
         { "name": "React", "slug": "react" },
-        { "name": "Next.js", "slug": "nextdotjs" },
+        { "name": "Next.js", "slug": "nextdotjs", "logoDark": "https://cdn.simpleicons.org/nextdotjs/ffffff" },
         { "name": "Tailwind CSS", "slug": "tailwindcss" },
         { "name": "Framer Motion", "slug": "framer" },
         { "name": "Redux", "slug": "redux" },
-        { "name": "shadcn/ui", "slug": "shadcnui" }
+        { "name": "shadcn/ui", "slug": "shadcnui", "logoDark": "https://cdn.simpleicons.org/shadcnui/ffffff" }
       ]
     },
     {
@@ -37,13 +37,13 @@
       "icon": "server",
       "items": [
         { "name": "Node.js", "slug": "nodedotjs" },
-        { "name": "Express", "slug": "express" },
+        { "name": "Express", "slug": "express", "logoDark": "https://cdn.simpleicons.org/express/ffffff" },
         { "name": "PostgreSQL", "slug": "postgresql" },
         { "name": "Supabase", "slug": "supabase" },
         { "name": "Firebase", "slug": "firebase" },
-        { "name": "Prisma", "slug": "prisma" },
+        { "name": "Prisma", "slug": "prisma", "logoDark": "https://cdn.simpleicons.org/prisma/ffffff" },
         { "name": "REST APIs", "slug": "fastapi" },
-        { "name": "JWT Auth", "slug": "jsonwebtokens" }
+        { "name": "JWT Auth", "slug": "jsonwebtokens", "logoDark": "https://cdn.simpleicons.org/jsonwebtokens/ffffff" }
       ]
     },
     {
@@ -54,7 +54,7 @@
         { "name": "Flutter", "slug": "flutter" },
         { "name": "Dart", "slug": "dart" },
         { "name": "React Native", "slug": "react" },
-        { "name": "Expo", "slug": "expo" }
+        { "name": "Expo", "slug": "expo", "logoDark": "https://cdn.simpleicons.org/expo/ffffff" }
       ]
     },
     {
@@ -85,11 +85,11 @@
       "icon": "rocket",
       "items": [
         { "name": "Git", "slug": "git" },
-        { "name": "GitHub", "slug": "github" },
+        { "name": "GitHub", "slug": "github", "logoDark": "https://cdn.simpleicons.org/github/ffffff" },
         { "name": "Vercel", "slug": "vercel" },
         { "name": "Docker", "slug": "docker" },
         { "name": "Linux", "slug": "linux" },
-        { "name": "CI/CD", "slug": "githubactions" }
+        { "name": "CI/CD", "slug": "githubactions", "logoDark": "https://cdn.simpleicons.org/githubactions/ffffff" }
       ]
     },
     {
@@ -98,7 +98,7 @@
       "icon": "pen-tool",
       "items": [
         { "name": "Figma", "slug": "figma" },
-        { "name": "VS Code", "slug": "visualstudiocode" },
+        { "name": "VS Code", "slug": "visualstudiocode", "logoDark": "https://cdn.simpleicons.org/visualstudiocode/ffffff" },
         { "name": "Postman", "slug": "postman" }
       ]
     },
