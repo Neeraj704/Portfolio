@@ -174,10 +174,17 @@ export default function SkillCloud({
     canvas.addEventListener("mouseleave", onMouseLeave);
 
     const drawPill = (node: Node, isHovered: boolean) => {
-      const padding = { x: 10, y: 6 };
-      const logoSize = 14;
-      const gap = 6;
-      const fontSize = node.isHero ? 13 : 11;
+      const isMobile = window.innerWidth < 640;
+      const padding = isMobile ? { x: 7, y: 4.5 } : { x: 10, y: 6 };
+      const logoSize = isMobile ? 11 : 14;
+      const gap = isMobile ? 4.5 : 6;
+      const fontSize = isMobile
+        ? node.isHero
+          ? 10
+          : 8.5
+        : node.isHero
+          ? 13
+          : 11;
 
       ctx.font = `${node.isHero ? "600" : "500"} ${fontSize}px Inter, sans-serif`;
       const textW = ctx.measureText(node.name).width;
