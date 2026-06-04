@@ -1,6 +1,5 @@
 "use client";
 
-
 import { cn } from "@/lib/utils";
 import { animate, motion, useMotionValue, useTransform } from "framer-motion";
 import { Dispatch, SetStateAction, useEffect, useState } from "react";
@@ -184,5 +183,5 @@ const cardData: Card[] = [
   {
     id: 3,
     url: "/img/myImage3.png",
-  }
+  },
 ];

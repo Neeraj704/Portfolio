@@ -1,7 +1,7 @@
 "use client";
 
 import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import { motion } from "framer-motion";
 import {
   Code2,
@@ -22,14 +22,14 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/Tabs";
 
 const iconMap = {
   "code-2": Code2,
-  "layout": Layout,
-  "server": Server,
-  "smartphone": Smartphone,
-  "layers": Layers,
-  "paintbrush": Paintbrush,
-  "rocket": Rocket,
+  layout: Layout,
+  server: Server,
+  smartphone: Smartphone,
+  layers: Layers,
+  paintbrush: Paintbrush,
+  rocket: Rocket,
   "pen-tool": PenTool,
-  "telescope": Telescope,
+  telescope: Telescope,
 };
 
 type SkillItem = {
@@ -49,6 +49,8 @@ export default function Skills() {
   const { resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
   const [iconStyle, setIconStyle] = useState<IconStyle>("colored");
+  const [activeTab, setActiveTab] = useState(skillsData.tabs[0].value);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     setMounted(true);
@@ -61,7 +63,27 @@ export default function Skills() {
     } catch {
       // localStorage unavailable — stay with default "colored"
     }
+
+    setIsMobile(window.innerWidth < 640);
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 640);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  const allSkills = useMemo(
+    () => skillsData.skills.flatMap((c) => c.items),
+    [],
+  );
+  const skillsToShow = useMemo(() => {
+    if (!mounted) return allSkills;
+    return isMobile
+      ? skillsData.skills
+          .filter((c) => c.tab === activeTab)
+          .flatMap((c) => c.items)
+      : allSkills;
+  }, [isMobile, activeTab, mounted, allSkills]);
 
   // Only resolve dark mode after mounting to avoid SSR/hydration mismatch
   const isDark = mounted && resolvedTheme === "dark";
@@ -102,7 +124,7 @@ export default function Skills() {
   return (
     <div className="flex flex-col gap-16">
       {/* SECTION 1 — Animated Skill Cloud */}
-      <SkillCloud iconStyle={iconStyle} />
+      <SkillCloud iconStyle={iconStyle} skills={skillsToShow} />
 
       {/* SECTION 2 — Tabbed Skill Grid */}
       <div className="w-full">
@@ -131,7 +153,7 @@ export default function Skills() {
           </button>
         </div> */}
 
-        <Tabs defaultValue={skillsData.tabs[0].value} className="w-full">
+        <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
           <TabsList className="mb-8 grid w-full grid-cols-3">
             {skillsData.tabs.map((tab) => (
               <TabsTrigger key={tab.value} value={tab.value}>
@@ -141,7 +163,11 @@ export default function Skills() {
           </TabsList>
 
           {skillsData.tabs.map((tab) => (
-            <TabsContent key={tab.value} value={tab.value} className="outline-none">
+            <TabsContent
+              key={tab.value}
+              value={tab.value}
+              className="outline-none"
+            >
               <motion.div
                 className="grid grid-cols-1 gap-6 sm:grid-cols-2"
                 initial="hidden"

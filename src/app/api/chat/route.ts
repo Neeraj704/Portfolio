@@ -11,7 +11,9 @@ export async function POST(req: Request) {
 
     if (!apiKey) {
       console.error("[Chat API] Missing GEMINI_API_KEY");
-      return new Response(JSON.stringify({ error: "Missing API Key" }), { status: 500 });
+      return new Response(JSON.stringify({ error: "Missing API Key" }), {
+        status: 500,
+      });
     }
 
     const genAI = new GoogleGenerativeAI(apiKey);
@@ -47,7 +49,7 @@ export async function POST(req: Request) {
     // Google SDK expects { role: 'user' | 'model', parts: [{ text: ... }] }
     // Filter out system messages if any
     const validHistory = (messages as Message[])
-      .filter(m => m.role === 'user' || m.role === 'assistant')
+      .filter((m) => m.role === "user" || m.role === "assistant")
       .map((m) => ({
         role: m.role === "user" ? "user" : "model",
         parts: [{ text: m.content }],
@@ -57,7 +59,9 @@ export async function POST(req: Request) {
     const lastMessage = validHistory[validHistory.length - 1];
     const history = validHistory.slice(0, validHistory.length - 1);
 
-    console.log(`[Chat API] Starting chat with ${history.length} history items`);
+    console.log(
+      `[Chat API] Starting chat with ${history.length} history items`,
+    );
 
     const chat = model.startChat({
       history: history,
@@ -81,24 +85,23 @@ export async function POST(req: Request) {
             // 1. Save User Message
             await supabase.from("chat_messages").insert({
               role: "user",
-              content: lastMessage.parts[0].text
+              content: lastMessage.parts[0].text,
             });
 
             // 2. Save AI Response
             await supabase.from("chat_messages").insert({
               role: "model",
-              content: completion
+              content: completion,
             });
           } catch (e) {
             console.error("Failed to save chat history:", e);
           }
         }
-      }
+      },
     });
 
     // Return using StreamingTextResponse which handles headers suitable for useChat
     return new StreamingTextResponse(stream);
-
   } catch (error: any) {
     console.error("[Gemini Chat Route Error]", error);
     return new Response(

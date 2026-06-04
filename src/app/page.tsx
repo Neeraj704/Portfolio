@@ -17,8 +17,6 @@ import homeContent from "@/data/home.json";
 const TED_BIRTH_YEAR = 2007;
 const LIMIT = 2; // max show 2
 
-
-
 export default function Home() {
   const currentAge = new Date().getFullYear() - TED_BIRTH_YEAR;
 
@@ -88,8 +86,6 @@ export default function Home() {
         </div>
         <Projects limit={LIMIT} />
       </section>
-
-
     </article>
   );
 }

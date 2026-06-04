@@ -13,7 +13,9 @@ export default function Projects({ limit }: Props) {
   const allProjects = projectSchema.parse(data).projects;
 
   const allApps = allProjects.filter((project) => project.type === "app");
-  const allWebsites = allProjects.filter((project) => project.type === "website");
+  const allWebsites = allProjects.filter(
+    (project) => project.type === "website",
+  );
 
   // Apply limit if set (for featured projects)
   const websites = limit ? allWebsites.slice(0, limit) : allWebsites;
@@ -42,4 +44,3 @@ export default function Projects({ limit }: Props) {
     </Tabs>
   );
 }
-

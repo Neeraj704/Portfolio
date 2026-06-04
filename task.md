@@ -1,18 +1,18 @@
 - [ ] Plan and backup
-    - [ ] Create implementation plan
+  - [ ] Create implementation plan
 - [ ] Update Data Files
-    - [ ] Update `src/data/home.json` (Bio, Intro, Chat prompts)
-    - [ ] Update `src/data/socials.json` (Social links)
-    - [ ] Update `src/data/career.json` (Work Experience)
-    - [ ] Update `src/data/education.json` (Education)
-    - [ ] Update `src/data/projects.json` (Projects)
+  - [ ] Update `src/data/home.json` (Bio, Intro, Chat prompts)
+  - [ ] Update `src/data/socials.json` (Social links)
+  - [ ] Update `src/data/career.json` (Work Experience)
+  - [ ] Update `src/data/education.json` (Education)
+  - [ ] Update `src/data/projects.json` (Projects)
 - [ ] Update Metadata and Config
-    - [ ] Update `package.json`
-    - [ ] Update `public/manifest.json`
-    - [ ] Update `src/app/layout.tsx` (Metadata)
-    - [ ] Update `src/app/page.tsx` (Birth year, hardcoded text)
+  - [ ] Update `package.json`
+  - [ ] Update `public/manifest.json`
+  - [ ] Update `src/app/layout.tsx` (Metadata)
+  - [ ] Update `src/app/page.tsx` (Birth year, hardcoded text)
 - [ ] Asset Management
-    - [ ] Create placeholder images in `public/img` structure as requested
+  - [ ] Create placeholder images in `public/img` structure as requested
 - [ ] Final Verification
-    - [ ] Verify build
-    - [ ] Verify lint
+  - [ ] Verify build
+  - [ ] Verify lint

@@ -1,4 +1,3 @@
-
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import * as dotenv from "dotenv";
 
@@ -30,20 +29,22 @@ async function testModel(modelName: string) {
 
 async function main() {
   console.log("🔍 Checking available models for 2026...");
-  
+
   const modelsToTest = [
     "gemini-3-flash-preview",
     "gemini-2.5-flash",
     "gemini-2.0-flash-exp",
     "gemini-2.0-flash",
     "gemini-1.5-flash-latest",
-    "gemini-1.5-pro-latest"
+    "gemini-1.5-pro-latest",
   ];
 
   for (const modelName of modelsToTest) {
     if (await testModel(modelName)) {
       console.log(`\n🎉 Found working model: ${modelName}`);
-      console.log(`PLEASE UPDATE src/app/api/chat/route.ts TO USE: "${modelName}"`);
+      console.log(
+        `PLEASE UPDATE src/app/api/chat/route.ts TO USE: "${modelName}"`,
+      );
       process.exit(0);
     }
   }

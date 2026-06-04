@@ -164,14 +164,14 @@ function extractCareerData(): ContentChunk[] {
       Array.isArray(job.positions) && job.positions.length > 0
         ? job.positions
         : [
-          {
-            title: job.title,
-            start: job.start,
-            end: job.end,
-            description: job.description,
-            links: job.links,
-          },
-        ];
+            {
+              title: job.title,
+              start: job.start,
+              end: job.end,
+              description: job.description,
+              links: job.links,
+            },
+          ];
 
     positions.forEach((position: any) => {
       const roleTitle = position.title ?? job.title ?? "Role";
@@ -243,14 +243,14 @@ function extractEducationData(): ContentChunk[] {
       Array.isArray(edu.positions) && edu.positions.length > 0
         ? edu.positions
         : [
-          {
-            title: edu.title,
-            start: edu.start,
-            end: edu.end,
-            description: edu.description,
-            links: edu.links,
-          },
-        ];
+            {
+              title: edu.title,
+              start: edu.start,
+              end: edu.end,
+              description: edu.description,
+              links: edu.links,
+            },
+          ];
 
     positions.forEach((position: any) => {
       const degreeTitle = position.title ?? edu.title ?? "Degree";

@@ -25,15 +25,13 @@ export async function sendEmail(data: ContactFormInputs) {
     }
 
     const supabase = createClient(supabaseUrl, supabaseKey);
-    const { error: dbError } = await supabase
-      .from("contact_messages")
-      .insert([
-        {
-          name,
-          email,
-          message,
-        },
-      ]);
+    const { error: dbError } = await supabase.from("contact_messages").insert([
+      {
+        name,
+        email,
+        message,
+      },
+    ]);
 
     if (dbError) {
       console.error("Supabase insert error:", dbError);

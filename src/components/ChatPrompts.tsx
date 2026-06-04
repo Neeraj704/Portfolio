@@ -39,7 +39,7 @@ const allPrompts = [
   "Where should I start if I want to explore Neeraj's work?",
   "What should I read to understand Neeraj's thinking?",
   "Is Neeraj more backend or frontend focused?",
-  "How can I contact Neeraj?"
+  "How can I contact Neeraj?",
 ];
 
 function getRandomPrompts(prompts: string[], count: number): string[] {

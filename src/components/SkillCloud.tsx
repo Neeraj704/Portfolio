@@ -25,7 +25,20 @@ interface Node {
   pillH?: number;
 }
 
-export default function SkillCloud({ iconStyle = "colored" }: { iconStyle?: "colored" | "mono" }) {
+export interface SkillItem {
+  name: string;
+  slug: string;
+  logoLight?: string;
+  logoDark?: string;
+}
+
+export default function SkillCloud({
+  iconStyle = "colored",
+  skills,
+}: {
+  iconStyle?: "colored" | "mono";
+  skills: SkillItem[];
+}) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const { resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
@@ -46,7 +59,11 @@ export default function SkillCloud({ iconStyle = "colored" }: { iconStyle?: "col
       const img = new Image();
       img.crossOrigin = "anonymous";
 
-      const s = skill as { slug: string; logoDark?: string; logoLight?: string };
+      const s = skill as {
+        slug: string;
+        logoDark?: string;
+        logoLight?: string;
+      };
 
       if (iconStyle === "mono") {
         // Monochrome mode: force white in dark, near-black in light
@@ -70,20 +87,30 @@ export default function SkillCloud({ iconStyle = "colored" }: { iconStyle?: "col
     let nodes: Node[] = [];
 
     const initNodes = () => {
-      const N = allSkills.length;
+      const N = skills.length;
+      if (N === 0) {
+        nodes = [];
+        return;
+      }
       const cols = Math.ceil(Math.sqrt(N * (W / H)));
       const rows = Math.ceil(N / cols);
       const cellW = W / cols;
       const cellH = H / rows;
 
-      nodes = allSkills.map((skill, i) => {
+      nodes = skills.map((skill, i) => {
         return {
           id: i,
           name: skill.name,
           slug: skill.slug,
           isHero: heroSkills.includes(skill.name),
-          baseX: (i % cols) * cellW + cellW / 2 + (Math.random() - 0.5) * cellW * 0.6,
-          baseY: Math.floor(i / cols) * cellH + cellH / 2 + (Math.random() - 0.5) * cellH * 0.6,
+          baseX:
+            (i % cols) * cellW +
+            cellW / 2 +
+            (Math.random() - 0.5) * cellW * 0.6,
+          baseY:
+            Math.floor(i / cols) * cellH +
+            cellH / 2 +
+            (Math.random() - 0.5) * cellH * 0.6,
           x: 0,
           y: 0,
           floatOffsetX: Math.random() * Math.PI * 2,
@@ -96,7 +123,8 @@ export default function SkillCloud({ iconStyle = "colored" }: { iconStyle?: "col
 
       // Compute nearest neighbors
       nodes.forEach((node) => {
-        const dist = (a: Node, b: Node) => Math.hypot(a.baseX - b.baseX, a.baseY - b.baseY);
+        const dist = (a: Node, b: Node) =>
+          Math.hypot(a.baseX - b.baseX, a.baseY - b.baseY);
         node.connections = nodes
           .filter((other) => other !== node)
           .sort((a, b) => dist(node, a) - dist(node, b))
@@ -165,13 +193,21 @@ export default function SkillCloud({ iconStyle = "colored" }: { iconStyle?: "col
 
       // Fill
       ctx.fillStyle = isHovered
-        ? isDark ? "rgba(255,255,255,0.15)" : "rgba(0,0,0,0.12)"
-        : isDark ? "rgba(255,255,255,0.06)" : "rgba(0,0,0,0.05)";
+        ? isDark
+          ? "rgba(255,255,255,0.15)"
+          : "rgba(0,0,0,0.12)"
+        : isDark
+          ? "rgba(255,255,255,0.06)"
+          : "rgba(0,0,0,0.05)";
 
       // Border
       ctx.strokeStyle = isHovered
-        ? isDark ? "rgba(255,255,255,0.5)" : "rgba(0,0,0,0.4)"
-        : isDark ? "rgba(255,255,255,0.15)" : "rgba(0,0,0,0.12)";
+        ? isDark
+          ? "rgba(255,255,255,0.5)"
+          : "rgba(0,0,0,0.4)"
+        : isDark
+          ? "rgba(255,255,255,0.15)"
+          : "rgba(0,0,0,0.12)";
       ctx.lineWidth = isHovered ? 1.5 : 1;
 
       // Rounded rect path
@@ -183,12 +219,22 @@ export default function SkillCloud({ iconStyle = "colored" }: { iconStyle?: "col
       // Logo image
       const img = logoImgs[node.slug];
       if (img?.complete && img.naturalWidth > 0) {
-        ctx.drawImage(img, x0 + padding.x, node.y - logoSize / 2, logoSize, logoSize);
+        ctx.drawImage(
+          img,
+          x0 + padding.x,
+          node.y - logoSize / 2,
+          logoSize,
+          logoSize,
+        );
       }
 
       // Text
       ctx.fillStyle = isDark ? "rgba(255,255,255,0.85)" : "rgba(0,0,0,0.8)";
-      ctx.fillText(node.name, x0 + padding.x + logoSize + gap, node.y + fontSize * 0.35);
+      ctx.fillText(
+        node.name,
+        x0 + padding.x + logoSize + gap,
+        node.y + fontSize * 0.35,
+      );
     };
 
     let rafId: number;
@@ -201,8 +247,12 @@ export default function SkillCloud({ iconStyle = "colored" }: { iconStyle?: "col
       // Update positions
       nodes.forEach((node) => {
         // Base float
-        node.x = node.baseX + Math.sin(t * node.floatSpeed + node.floatOffsetX) * node.floatRadius;
-        node.y = node.baseY + Math.cos(t * node.floatSpeed + node.floatOffsetY) * node.floatRadius;
+        node.x =
+          node.baseX +
+          Math.sin(t * node.floatSpeed + node.floatOffsetX) * node.floatRadius;
+        node.y =
+          node.baseY +
+          Math.cos(t * node.floatSpeed + node.floatOffsetY) * node.floatRadius;
 
         // Mouse repulsion
         if (isMouseInCanvas) {
@@ -255,7 +305,11 @@ export default function SkillCloud({ iconStyle = "colored" }: { iconStyle?: "col
       // Draw cursor connections
       if (isMouseInCanvas) {
         const sortedByDist = [...nodes]
-          .sort((a, b) => Math.hypot(a.x - mouse.x, a.y - mouse.y) - Math.hypot(b.x - mouse.x, b.y - mouse.y))
+          .sort(
+            (a, b) =>
+              Math.hypot(a.x - mouse.x, a.y - mouse.y) -
+              Math.hypot(b.x - mouse.x, b.y - mouse.y),
+          )
           .slice(0, 3);
 
         sortedByDist.forEach((node) => {
@@ -292,20 +346,22 @@ export default function SkillCloud({ iconStyle = "colored" }: { iconStyle?: "col
       canvas.removeEventListener("mousemove", onMouseMove);
       canvas.removeEventListener("mouseleave", onMouseLeave);
     };
-  }, [mounted, resolvedTheme, iconStyle]);
+  }, [mounted, resolvedTheme, iconStyle, skills]);
 
   if (!mounted) {
-    return <div className="w-full h-[260px] sm:h-[380px] rounded-xl bg-muted/30 animate-pulse" />;
+    return (
+      <div className="h-[260px] w-full animate-pulse rounded-xl bg-muted/30 sm:h-[380px]" />
+    );
   }
 
   return (
-    <div className="flex flex-col gap-2 w-full">
+    <div className="flex w-full flex-col gap-2">
       <canvas
         ref={canvasRef}
-        className="w-full h-[260px] sm:h-[380px] rounded-xl outline-none"
+        className="h-[260px] w-full rounded-xl outline-none sm:h-[380px]"
         style={{ display: "block", cursor: "crosshair" }}
       />
-      <p className="text-center text-xs text-muted-foreground -mt-2">
+      <p className="-mt-2 text-center text-xs text-muted-foreground">
         move cursor to interact
       </p>
     </div>
