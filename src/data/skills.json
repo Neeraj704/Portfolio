@@ -99,7 +99,10 @@
       "items": [
         { "name": "Figma", "slug": "figma" },
         { "name": "VS Code", "slug": "visualstudiocode", "logoDark": "https://cdn.simpleicons.org/visualstudiocode/ffffff" },
-        { "name": "Postman", "slug": "postman" }
+        { "name": "Postman", "slug": "postman" },
+        { "name": "Android Studio", "slug": "androidstudio" },
+        { "name": "Notion", "slug": "notion", "logoDark": "https://cdn.simpleicons.org/notion/ffffff" },
+        { "name": "Stripe", "slug": "stripe" }
       ]
     },
     {
@@ -111,8 +114,8 @@
         { "name": "Keras", "slug": "keras" },
         { "name": "scikit-learn", "slug": "scikitlearn" },
         { "name": "Jupyter", "slug": "jupyter" },
-        { "name": "Web3 / Solana", "slug": "solana" },
-        { "name": "Privy.io", "slug": "ethereum" }
+        { "name": "NumPy", "slug": "numpy" },
+        { "name": "pandas", "slug": "pandas" }
       ]
     }
   ]
