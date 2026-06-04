@@ -1,51 +1,118 @@
 {
+  "tabs": [
+    { "value": "web", "label": "Web Dev" },
+    { "value": "app", "label": "App Dev" },
+    { "value": "tools", "label": "Tools & More" }
+  ],
   "skills": [
     {
       "category": "Languages",
+      "tab": "web",
       "icon": "code-2",
       "items": [
         { "name": "TypeScript", "slug": "typescript" },
         { "name": "JavaScript", "slug": "javascript" },
         { "name": "Python", "slug": "python" },
-        { "name": "Dart", "slug": "dart" },
+        { "name": "HTML/CSS", "slug": "html5" },
         { "name": "SQL", "slug": "mysql" },
-        { "name": "HTML/CSS", "slug": "html5" }
+        { "name": "C / C++", "slug": "cplusplus" }
       ]
     },
     {
       "category": "Frontend",
+      "tab": "web",
       "icon": "layout",
       "items": [
         { "name": "React", "slug": "react" },
         { "name": "Next.js", "slug": "nextdotjs" },
         { "name": "Tailwind CSS", "slug": "tailwindcss" },
-        { "name": "Flutter", "slug": "flutter" },
         { "name": "Framer Motion", "slug": "framer" },
-        { "name": "Redux", "slug": "redux" }
+        { "name": "Redux", "slug": "redux" },
+        { "name": "shadcn/ui", "slug": "shadcnui" }
       ]
     },
     {
       "category": "Backend",
+      "tab": "web",
       "icon": "server",
       "items": [
         { "name": "Node.js", "slug": "nodedotjs" },
         { "name": "Express", "slug": "express" },
-        { "name": "Supabase", "slug": "supabase" },
         { "name": "PostgreSQL", "slug": "postgresql" },
+        { "name": "Supabase", "slug": "supabase" },
         { "name": "Firebase", "slug": "firebase" },
-        { "name": "Prisma", "slug": "prisma" }
+        { "name": "Prisma", "slug": "prisma" },
+        { "name": "REST APIs", "slug": "fastapi" },
+        { "name": "JWT Auth", "slug": "jsonwebtokens" }
       ]
     },
     {
-      "category": "Tools & DevOps",
-      "icon": "wrench",
+      "category": "Mobile",
+      "tab": "app",
+      "icon": "smartphone",
+      "items": [
+        { "name": "Flutter", "slug": "flutter" },
+        { "name": "Dart", "slug": "dart" },
+        { "name": "React Native", "slug": "react" },
+        { "name": "Expo", "slug": "expo" }
+      ]
+    },
+    {
+      "category": "State & Architecture",
+      "tab": "app",
+      "icon": "layers",
+      "items": [
+        { "name": "Zustand", "slug": "zotero" },
+        { "name": "TanStack Query", "slug": "reactquery" },
+        { "name": "GetX", "slug": "flutter" },
+        { "name": "Provider", "slug": "dart" },
+        { "name": "MVVM", "slug": "android" }
+      ]
+    },
+    {
+      "category": "Styling (Mobile)",
+      "tab": "app",
+      "icon": "paintbrush",
+      "items": [
+        { "name": "NativeWind", "slug": "tailwindcss" },
+        { "name": "Material Design", "slug": "materialdesign" },
+        { "name": "React Navigation", "slug": "react" }
+      ]
+    },
+    {
+      "category": "Dev & Deploy",
+      "tab": "tools",
+      "icon": "rocket",
       "items": [
         { "name": "Git", "slug": "git" },
-        { "name": "Docker", "slug": "docker" },
-        { "name": "VS Code", "slug": "visualstudiocode" },
-        { "name": "Figma", "slug": "figma" },
+        { "name": "GitHub", "slug": "github" },
         { "name": "Vercel", "slug": "vercel" },
-        { "name": "Linux", "slug": "linux" }
+        { "name": "Docker", "slug": "docker" },
+        { "name": "Linux", "slug": "linux" },
+        { "name": "CI/CD", "slug": "githubactions" }
+      ]
+    },
+    {
+      "category": "Design & Tools",
+      "tab": "tools",
+      "icon": "pen-tool",
+      "items": [
+        { "name": "Figma", "slug": "figma" },
+        { "name": "VS Code", "slug": "visualstudiocode" },
+        { "name": "Postman", "slug": "postman" }
+      ]
+    },
+    {
+      "category": "Exploring",
+      "tab": "tools",
+      "icon": "telescope",
+      "items": [
+        { "name": "TensorFlow", "slug": "tensorflow" },
+        { "name": "Keras", "slug": "keras" },
+        { "name": "scikit-learn", "slug": "scikitlearn" },
+        { "name": "Jupyter", "slug": "jupyter" },
+        { "name": "Web3 / Solana", "slug": "solana" },
+        { "name": "Privy.io", "slug": "ethereum" }
       ]
     }
   ]
