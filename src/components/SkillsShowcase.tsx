@@ -8,9 +8,21 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/Card";
-import type { SkillCategory, SkillItem } from "@/lib/schemas";
+import dynamicIconImports from "lucide-react/dynamicIconImports";
 import { motion, type Variants, useReducedMotion } from "framer-motion";
 import Icon from "./Icon";
+
+export interface SkillItem {
+  name: string;
+  icon: keyof typeof dynamicIconImports;
+}
+
+export interface SkillCategory {
+  category: string;
+  description: string;
+  icon: keyof typeof dynamicIconImports;
+  items: SkillItem[];
+}
 
 interface SkillsShowcaseProps {
   categories: SkillCategory[];
