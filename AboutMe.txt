@@ -46,7 +46,7 @@ bug fixes and new features  ui updates as well (write this section nicely by urs
 We Fund You Trade 
 https://wfyt.com/
 https://wfyt.com/wp-content/uploads/2023/06/wfyt-mobile.png (transparent background so keep that in mind use wisely)
-Web dev paid internship
+Web dev internship
 ui fixes, basic api integration and all (write this section nicely by urself as well)
 jan 2025 - march 2025
 
